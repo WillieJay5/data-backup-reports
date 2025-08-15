@@ -60,17 +60,3 @@ pivots:
 ## Troubleshooting
 - If you see `PyYAML is not installed`, run `pip install pyyaml` or remove the `--config` flag.
 - If Excel complains about sheet names, we truncate to 31 chars.
-
----
-
-# ==========================
-# example_data/sales_q1.csv
-# ==========================
-order_date,order_month,region,product,quantity,revenue
-2025-01-03,2025-01,North,Shampoo,3,39.00
-2025-01-09,2025-01,South,Conditioner,2,32.00
-2025-02-14,2025-02,West,Mask,1,24.00
-2025-02-20,2025-02,North,Shampoo,5,65.00
-2025-03-05,2025-03,East,Serum,2,58.00
-2025-03-19,2025-03,North,Conditioner,4,64.00
-
