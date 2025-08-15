@@ -1,0 +1,2 @@
+# Run Mondays at 06:00 local time
+0 6 * * 1 /usr/bin/env bash -lc 'cd /opt/weekly-csv-backup-to-dropbox && source .venv/bin/activate && python backup.py >> backup.log 2>&1'
