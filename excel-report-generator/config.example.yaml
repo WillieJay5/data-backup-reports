@@ -1,0 +1,25 @@
+# Excel table style to use when writing each sheet (see XlsxWriter table styles)
+table_style: "Table Style Light 9"
+
+# Hint which columns should be parsed as dates per source (by file stem)
+sources:
+  - name: sales_q1
+    date_cols: [order_date]
+
+# Define one or more pivots to build on the Summary sheets
+pivots:
+  - name: Revenue by Month
+    source: sales_q1
+    index: [order_month]
+    columns: [region]
+    values: revenue
+    aggfunc: sum
+    fillna: 0
+    margins: true
+
+  - name: Units by Product
+    source: sales_q1
+    index: [product]
+    values: quantity
+    aggfunc: sum
+    fillna: 0
