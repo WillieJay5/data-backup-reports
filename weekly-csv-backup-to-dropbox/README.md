@@ -24,8 +24,3 @@ Prefer storing `DROPBOX_ACCESS_TOKEN` in your OS secret store or CI secret rathe
 - **Auth failed**: confirm token scopes and that the token hasn’t expired.
 - **Nothing to back up**: widen `LOOKBACK_DAYS` or verify paths/glob.
 - **Permission denied**: ensure the Dropbox app has rights to `DROPBOX_DEST_FOLDER`.
-
-## Roadmap (optional)
-- OAuth refresh‑token flow for long‑lived unattended jobs
-- E‑mail/Slack notification on success/failure
-- Per‑source include/exclude patterns
